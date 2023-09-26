@@ -1,8 +1,217 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: var(--inter);
 }
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --ibmplex: "IBM Plex Sans", sans-serif;
+  --inter: "Inter", sans-serif;
+  --main: #263750;
+  --text: #545454;
+  --heading: #020226;
+  --orange: #f86d31;
+  --white: #ffffff;
+  --halfwhite: #f5f5f5;
+}
+
+/* headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 10 vh;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-family: var(--ibmplex);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header .logo h1,
+.footer .flogo h1 {
+  color: var(--main);
+  font-weight: 700;
+  font-family: var(--ibmplex);
+  font-size: 1.8rem;
+}
+
+/* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 4% 10%;
+  background-color: var(--halfwhite);
+}
+.footer .flogo h1 {
+  margin-bottom: 2rem;
+}
+.footer .flogo div {
+  margin: 1rem 0 1.5rem 0;
+}
+
+.footer .flogo div h4,
+.footer .flogo div p {
+  color: var(--main);
+  font-weight: 500;
+  font-family: var(--inter);
+  font-size: 0.875rem;
+}
+
+.footer .flogo div p {
+  color: var(--text);
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+.footer .top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10%;
+}
+
+.footer .top .fnav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer .top .fnav a {
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: var(--ibmplex);
+  color: var(--text);
+}
+
+.footer .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .flink h3 {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--main);
+  margin-bottom: 1rem;
+  font-family: var(--ibmplex);
+}
+
+.footer .bottom p {
+  font-size: 0.9375rem;
+  font-weight: normal;
+  font-family: var(--ibmplex);
+  color: var(--main);
+}
+
+.footer .bottom .icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer .bottom .icons svg {
+  color: var(--main);
+  font-size: 1.5rem;
+}
+
+.footer .top span {
+  background-color: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer .top span svg {
+  color: var(--white);
+  font-size: 1.25rem;
+}
+
+/* Metrics ===================== */
+
+.metrics {
+  background-color: var(--heading);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 6% 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+.metrics .statscon {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.metrics h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--ibmplex);
+  margin-bottom: 1rem;
+}
+
+.metrics > p {
+  font-family: var(--ibmplex);
+  color: #8896ab;
+  font-weight: 400;
+  text-align: center;
+  width: 72%;
+  font-size: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5rem;
+}
+
+.stats h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: var(--ibmplex);
+}
+
+.stats p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.metrics .pat1,
+.metrics .pat2 {
+  position: absolute;
+}
+.metrics .pat1 {
+  top: 50px;
+  left: 80px;
+}
+
+.metrics .pat2 {
+  right: 20px;
+  bottom: -32px;
+}
+
+/* Home ================== */
