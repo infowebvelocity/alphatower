@@ -14,7 +14,7 @@ const Service = () => {
       <img className='frame frame1' src={Frame} alt="frame" />
       <img className='frame frame2' src={Frame} alt="frame" />
 
-      <span>Services</span>
+      {/* <span>Services</span> */}
       <h2>What We offer</h2>
 
       <div className="scon">
