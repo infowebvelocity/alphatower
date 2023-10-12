@@ -8,7 +8,7 @@ const Callback = () => {
       <img className='pat2' src={Pattern} alt="pattern" />
 
       <h2>Request a Callback</h2>
-      <p>Lorem ipsum dolor sit amet consectetur. Elit massa morbi eget velit in mauris. Porta risus placerat nunc nullam felis. Est in vitae velit eu lectus elit risus ac magna a.</p>
+      <p>Step into the future of trading with us. Enter your details and let our algorithms do the heavy lifting for you!</p>
 
       <form className='form'>
         <label>

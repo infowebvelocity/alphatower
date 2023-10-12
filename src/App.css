@@ -222,6 +222,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 0% 4%;
+  background-color: #e9ebee;
 }
 
 .home > h1 {
@@ -229,7 +230,7 @@
   width: 50%;
   font-family: var(--ibmplex);
   line-height: 5rem;
-  color: var(--heading);
+  color: var(--main);
 }
 
 .home > p {
@@ -240,14 +241,16 @@
   color: var(--text);
 }
 
-.home > .btn {
+.home > .btn,
+.pricing .btn {
   display: flex;
   justify-content: space-between;
   gap: 1.875rem;
   width: max-content;
 }
 
-.home > .btn a {
+.home > .btn a,
+.pricing .btn a {
   border: 1.5px solid var(--main);
   padding: 0.5rem 1.5rem;
   border-radius: 0.125rem;
@@ -258,7 +261,8 @@
   font-size: 1.125rem;
 }
 
-.home > .btn a:first-child {
+.home > .btn a:first-child,
+.pricing .btn a:first-child {
   background-color: var(--main);
   color: var(--white);
 }
@@ -348,6 +352,7 @@
   font-weight: 600;
   font-size: var(--ibmplex);
   color: var(--main);
+  text-align: center;
 }
 
 .scon .scard p {
@@ -428,13 +433,13 @@
 }
 
 .features .featcontent p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #8896ab;
 }
 
 .features .featcon {
   position: relative;
-  width: 70%;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -506,7 +511,7 @@
 }
 
 .success h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 1.5rem;
   color: var(--main);
   font-weight: 500;
@@ -514,10 +519,15 @@
 }
 
 .success p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
   font-weight: 400;
   color: var(--text);
+  line-height: 1.7rem;
+}
+
+.success .img img {
+  width: 500px;
 }
 
 .about > .success .p2 {
@@ -552,7 +562,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   background-color: #f9fcff;
   padding: 6% 8%;
   font-family: var(--ibmplex);
@@ -656,16 +666,21 @@
 
 .contact {
   display: flex;
-  justify-content: sp;
+  justify-content: center;
+  padding: 4% 2%;
 }
 
-.contact > * {
-  width: 50%;
+.contact > .formm {
+  width: 60%;
+}
+
+.contact > .map {
+  width: 40%;
 }
 .contact .formm {
   display: flex;
   flex-direction: column;
-  padding: 5% 8%;
+  padding: 5% 6% 5% 8%;
 }
 
 .contact .formm form {
@@ -715,11 +730,58 @@
   color: var(--text);
 }
 
-@media screen and (max-width: 769px) {
+.contact .map {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .map img {
+  width: 400px;
+  height: 550px;
+}
+
+.pricingcon p {
+  text-align: center;
+  width: 60%;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .contact {
+    flex-wrap: wrap;
+  }
+
+  .about .pattern {
+    display: none !important;
+  }
+
+  .contact > .formm {
+    width: 100%;
+    padding: 5% 10%;
+  }
+
+  .contact .map img {
+    display: none;
+  }
+
+  .contact > .map {
+    width: 100%;
+  }
+  .scon .scard h4 {
+    text-align: center;
+  }
   .header nav {
     display: none;
   }
 
+  .scon .scard a {
+    font-size: 0.85rem;
+  }
+
+  .scon .scard p {
+    font-size: 0.9rem;
+  }
   .header {
     height: 10vh;
     padding: 0.625rem 0.9375rem;
@@ -772,7 +834,7 @@
   .service > h2 {
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
 
   .features .featcontent p,
@@ -850,24 +912,24 @@
     font-size: 0.8rem;
     text-align: left;
     margin-bottom: 1rem;
+    line-height: 1.3rem;
   }
 
   .success .img img {
-    width: 220px;
+    width: 280px;
+    padding-bottom: 3rem;
   }
 
   .success .p1 {
-    top: auto;
-    left: 2rem;
     width: 50px;
-    bottom: 12rem;
+    top: 0.5rem;
+    left: 0.5rem;
   }
 
   .success .p2 {
-    bottom: 0rem;
-    right: 1.4rem;
+    bottom: 0.1rem;
+    right: 0.1rem;
     width: 50px;
-    z-index: -1;
   }
 
   .metrics .statscon {
@@ -960,52 +1022,188 @@
 
   .pricingcon {
     padding: 10% 8%;
+  }
+
+  .pcard p {
+    font-size: 1.2rem;
+  }
+
+  .pcard > span {
+    font-size: 2.2rem;
+  }
+
+  .pcardcon .pcard ul li {
+    font-size: 0.85rem;
+  }
+
+  .pricingcon h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+  }
+
+  .contact > * {
+    width: 100%;
+  }
+
+  .contact .formm h3 {
+    font-size: 2rem;
+  }
+
+  .contact .formm p {
+    font-size: 1rem;
+  }
+
+  .contact .formm form input {
+    font-size: 0.8rem;
+  }
+
+  .contact .formm form .sbtn {
+    font-size: 0.75rem;
+  }
+
+  .about > .success:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
 }
 
-.pcard p {
-  font-size: 1.2rem;
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  .contact > .formm {
+    width: 100%;
+    padding: 5% 18%;
+  }
+  .success p {
+    font-size: 1rem;
+  }
+  .form {
+    flex-direction: column;
+    margin-top: 2rem;
+    z-index: 11;
+    width: 500px;
+    gap: 1rem;
+  }
+  .service {
+    padding: 8% 14%;
+  }
+
+  .features .featcontent p,
+  .metrics > p {
+    font-size: 1rem;
+  }
+
+  .scon .scard {
+    width: 45%;
+  }
+  .form > * {
+    width: 100%;
+  }
+  .features .featcon {
+    padding: 4% 2%;
+    justify-content: center;
+  }
+
+  .features .featcon > * {
+    width: 45%;
+  }
+
+  .features .featcon .fcard {
+    padding: 4% 3%;
+  }
+
+  .success .img img {
+    width: 350px;
+  }
+
+  .success h2 {
+    font-size: 2rem;
+  }
+  .metrics h2,
+  .service > h2 {
+    font-size: 2rem;
+  }
+
+  .footer {
+    padding: 8% 4%;
+  }
+
+  .sec5 > .metrics {
+    padding: 6% 10%;
+  }
 }
 
-.pcard > span {
-  font-size: 2.2rem;
-}
+@media screen and (min-width: 991px) and (max-width: 1250px) {
+  .scon .scard {
+    width: 40%;
+  }
+  .scon {
+    flex-wrap: wrap;
+  }
 
-.pcardcon .pcard ul li {
-  font-size: 0.85rem;
-}
+  .service > h2 {
+    font-size: 2.5rem;
+  }
 
-.pricingcon h3 {
- font-size: 1.8rem;
-  text-align: center;
-  margin-top: 1rem;
-}
+  .home > h1 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+  }
 
-.contact{
-  flex-wrap: wrap;
-}
+  .home > p {
+    font-size: 1.5rem;
+    width: 50%;
+  }
 
+  .home > .btn a {
+    font-size: 0.9rem;
+  }
 
-.contact > *{
-  width: 100%;
-}
+  .frame {
+    width: 80px;
+  }
 
-.contact .formm h3 {
-  font-size: 2rem;
-}
+  .metrics h2 {
+    font-size: 2.5rem;
+  }
 
-.contact .formm p {
-  font-size: 1rem;
-}
+  .features .featcontent p {
+    font-size: 1.1rem;
+  }
 
-.contact .formm form input {
-  font-size: 0.8rem;
-}
+  .features .featcon > * {
+    width: 40%;
+  }
 
-.contact .formm form .sbtn {
-  font-size: 0.75rem;
-}
+  .success p {
+    font-size: 1rem;
+  }
 
-.about > .success:nth-child(odd) {
-  flex-direction: column-reverse;
-}
+  .pattern {
+    width: 70px;
+  }
+
+  .success .p1 {
+    top: 3rem;
+    left: 2rem;
+  }
+
+  .success .img img {
+    width: 400px;
+  }
+
+  .success {
+    padding: 7% 6%;
+    gap: 2rem;
+  }
+
+  .frame {
+    width: 70px;
+  }
+
+  .fpat {
+    width: 120px;
+  }
 }

@@ -18,10 +18,10 @@ const Service = () => {
       <h2>What We offer</h2>
 
       <div className="scon">
-        <Scard title="API Bridge" img={card3} para="Lorem ipsum dolor sit amet consectetur. Velit diam bibendum ." />
-        <Scard title="Algo Trading" img={card2} para="Lorem ipsum dolor sit amet consectetur. Velit diam bibendum ." />
-        <Scard title="Auto Buy Sell Signal" img={card1} para="Lorem ipsum dolor sit amet consectetur. Velit diam bibendum ." />
-        <Scard title="Auto Buy Sell Signal" img={card1} para="Lorem ipsum dolor sit amet consectetur. Velit diam bibendum ." />
+        <Scard title="Buy/Sell Bots" img={card3} para="Smart bots executing orders seamlessly in your demat account." />
+        <Scard title="Buy/Sell Alerts" img={card2} para="Personalized stock alerts on WhatsApp, Telegram, Mobile app , etc." />
+        <Scard title="Backtesting" img={card1} para="Backtesting trading strategies with precision." />
+        <Scard title="Strategy Development" img={card1} para="Automating your stock market trading strategies." />
 
       </div>
 

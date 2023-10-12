@@ -25,12 +25,18 @@ const Pricing = () => {
   ]
   return (
     <section className="pricing">
-      <Success image={Imgs} title="Our Services" para1="Lorem ipsum dolor sit amet consectetur. Venenatis fringilla fringilla congue pellentesque tempus malesuada convallis. Lacus non egestas mattis orci. Interdum." />
+      <Success image={Imgs} title="Our Pricings" para1="Our pricing strategy is designed to align with your success. We believe in transparency and offer affordable rates to capitalize on market opportunities and boost your trading strategies" />
 
       <div className="pricingcon">
-        <h3>Ready to get started?</h3>
+        <h3>Prices Starting from Rs. 15,000 Onwards</h3>
+        <p>Lorem ipsum dolor sit amet consectetur. Tortor vitae senectus nunc ut volutpat facilisis consequat nullam. Orci posuere in quis ut. Nunc id faucibus eu nisl integer netus nibh. Viverra nibh ipsum etiam sit in.</p>
 
-        <div className="pcardcon">
+        <div className="btn">
+          <a href="">Get a Quote</a>
+          <a href="">Learn More</a>
+        </div>
+
+        {/* <div className="pcardcon">
 
           {data.map((item, index) => {
             return <Pcard key={index} title={item.title} price={item.price} arr={item.list} />
@@ -38,7 +44,7 @@ const Pricing = () => {
 
 
 
-        </div>
+        </div> */}
       </div>
     </section>
   )

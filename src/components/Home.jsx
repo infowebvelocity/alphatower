@@ -12,8 +12,8 @@ const Home = () => {
     <>
       <section className="home">
 
-        <h1>100% Automated Trading Platform</h1>
-        <p>Lorem ipsum dolor sit amet consectetur. Aliquet faucibus .</p>
+        <h1>Empowering your trading journey.</h1>
+        <p>Revolutionize your stock market experience with us.</p>
 
         <div className="btn">
           <a href="">Get a Quote</a>
@@ -22,27 +22,30 @@ const Home = () => {
 
       </section>
 
-
+      <section className="sec2">
+        <Service />
+      </section>
+      
       <section className="sec3">
         <Features />
       </section>
 
-      <section className="sec2">
-        <Success image={Imgs} title="Our Success Story" para1=" Being Strategic, Our developer is sufficiently skilled to trick the software and have the necessary programming and well back testing capacity." para2=" We aimed to furnish consistent access to market participants with secure and straight forward innovation solutions. We are capable with the trading software and programming of strategies. We execute our work with professional staff who have an incredible information on trading principles, have a good understanding of financial calculations,basic statistics and computing trading execution measurements."/>
+      <section className="sec4">
+        <Success image={Imgs} title="Our Success Story" para1="One of our notable achievements was automating a strategy for a client that sends alerts on Telegram. This was a game-changer for the client, enabling them to receive timely trading signals directly on their preferred platform. The automation of this strategy not only streamlined their trading process but also allowed them to respond swiftly to market changes." para2="We successfully automated a strategy for a client, eliminating manual intervention and ensuring seamless trading. This strategy automatically places buy/sell orders, increasing accuracy and efficiency. Our success stories reflect our commitment to innovative and effective trading solutions." />
       </section>
 
-      <section className="sec2">
+
+
+      {/* <section className="sec2">
         <Metrics />
-      </section>
+      </section> */}
 
 
 
 
-      <section className="sec3">
-        <Service />
-      </section>
 
-      <section className="sec3">
+
+      <section className="sec5">
         <Callback />
       </section>
 

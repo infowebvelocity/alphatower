@@ -6,26 +6,26 @@ const Features = () => {
 
     const data = [
         {
-            title: 'Automated Functioning',
-            para: 'Automated Buy And Sell Signal With Target.',
+            title: 'Innovation and Technology',
+            para: 'Advanced algorithms for efficient, effective trading tools.',
             num: '1',
         },
 
         {
-            title: 'Markets & Instruments',
-            para: 'Best indicators for market analysis',
+            title: 'Customization and Flexibility',
+            para: 'Customizable services for your unique trading style.',
             num: '2',
         },
 
         {
-            title: 'Order Management and Execution Algos',
-            para: 'Improving Order Entry Speed and Diversify Trading.',
+            title: 'Reliability and Accuracy',
+            para: 'Reliable systems for timely alerts and precise backtesting.',
             num: '3',
         },
 
         {
-            title: 'Strategy Development',
-            para: 'We develop your strategy with our code.',
+            title: 'Support',
+            para: 'Empowering users with dedicated support and tools.',
             num: '4',
         }
 
@@ -40,7 +40,8 @@ const Features = () => {
 
             <div className="featcontent">
                 <h2>Why Choose Us ?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Suspendisse suspendisse tempor et ipsum sit egestas nunc. Diam in cum a in.</p>
+                <p>Our cutting-edge technology transforms your strategy into action. <br /> <br />
+                    We’re not just a service, we’re your ally in the stock market. Discover the power of smart trading with us.</p>
 
             </div>
 
