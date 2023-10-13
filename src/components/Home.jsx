@@ -6,6 +6,7 @@ import Features from './Features'
 import Success from './Success'
 import Imgs from "../images/success.png"
 
+
 const Home = () => {
   return (
 
@@ -31,7 +32,7 @@ const Home = () => {
       </section>
 
       <section className="sec4">
-        <Success image={Imgs} title="Our Success Story" para1="One of our notable achievements was automating a strategy for a client that sends alerts on Telegram. This was a game-changer for the client, enabling them to receive timely trading signals directly on their preferred platform. The automation of this strategy not only streamlined their trading process but also allowed them to respond swiftly to market changes." para2="We successfully automated a strategy for a client, eliminating manual intervention and ensuring seamless trading. This strategy automatically places buy/sell orders, increasing accuracy and efficiency. Our success stories reflect our commitment to innovative and effective trading solutions." />
+        <Success classs={"success"} image={Imgs} title="Our Success Story" para1="One of our notable achievements was automating a strategy for a client that sends alerts on Telegram. This was a game-changer for the client, enabling them to receive timely trading signals directly on their preferred platform. The automation of this strategy not only streamlined their trading process but also allowed them to respond swiftly to market changes." para2="We successfully automated a strategy for a client, eliminating manual intervention and ensuring seamless trading. This strategy automatically places buy/sell orders, increasing accuracy and efficiency. Our success stories reflect our commitment to innovative and effective trading solutions." />
       </section>
 
 

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios'; // Import Axios
 import Map from '../images/map.png';
+import Success from './Success'
+import contactimg from "../images/contact.png"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -47,21 +49,25 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      <div className="formm">
-        <h3>Get in Touch</h3>
-        <p>
-          Have questions or ready to explore the possibilities of automated trading with us? We're here to assist you. Contact us today for personalized guidance and solutions tailored to your trading needs
-        </p>
-        <form onSubmit={handleSubmit}>
-          <input type="text" name="name" placeholder="Full Name" onChange={handleChange} value={formData.name} />
-          <input type="email" name="email" placeholder="Email" onChange={handleChange} value={formData.email} />
-          <input type="tel" name="phoneNo" placeholder="Contact No" onChange={handleChange} value={formData.phoneNo} />
-          <input className="sbtn" type="submit" value="Send" />
-        </form>
-      </div>
+      <Success classs="success contactbg" bpara={'bpara'} bhead={'bhead'} image={contactimg} title="Our Services" para1="We offer a comprehensive suite of trading solutions. Our services are designed to empower your trading and fuel your success. Explore our offerings and find the perfect fit for your trading needs." />
 
-      <div className="map">
-        <img src={Map} alt="map" />
+      <div className="concon">
+        <div className="formm">
+          <h3>Get in Touch</h3>
+          <p>
+            Have questions or ready to explore the possibilities of automated trading with us? We're here to assist you. Contact us today for personalized guidance and solutions tailored to your trading needs
+          </p>
+          <form onSubmit={handleSubmit}>
+            <input type="text" name="name" placeholder="Full Name" onChange={handleChange} value={formData.name} />
+            <input type="email" name="email" placeholder="Email" onChange={handleChange} value={formData.email} />
+            <input type="tel" name="phoneNo" placeholder="Contact No" onChange={handleChange} value={formData.phoneNo} />
+            <input className="sbtn" type="submit" value="Send" />
+          </form>
+        </div>
+
+        <div className="map">
+          <img src={Map} alt="map" />
+        </div>
       </div>
     </section>
   );
