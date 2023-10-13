@@ -2,9 +2,10 @@ import React from 'react'
 import Imgs from "../images/success.png"
 import Pattern from "../images/frame.png"
 
-const Success = ({ image, title, para1, para2 }) => {
+const Success = ({ image, title, para1, para2, classs }) => {
     return (
-        <section className="success">
+        <section className={classs} >
+
 
             <img className='pattern p1' src={Pattern} alt="Pattern img" />
             <img className='pattern p2' src={Pattern} alt="Pattern img" />
