@@ -25,7 +25,7 @@ const Pricing = () => {
   ]
   return (
     <section className="pricing">
-      <Success classs="success pricingbg overlay" image={Imgs} title="Our Pricings" para1="Our pricing strategy is designed to align with your success. We believe in transparency and offer affordable rates to capitalize on market opportunities and boost your trading strategies" />
+      <Success classs="success pricingbg " bpara={'bpara'} bhead={'bhead'} image={Imgs} title="Our Pricings" para1="Our pricing strategy is designed to align with your success. We believe in transparency and offer affordable rates to capitalize on market opportunities and boost your trading strategies" />
 
       <div className="pricingcon">
         <h3>Prices Starting from Rs. 15,000 Onwards</h3>
