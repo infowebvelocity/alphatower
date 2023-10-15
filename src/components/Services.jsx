@@ -1,6 +1,5 @@
 import React from 'react'
 import Success from './Success'
-import Imgs from "../images/success.png"
 import Serviceimg from "../images/service.png"
 import Serviceimg1 from "../images/s1.png"
 import Serviceimg2 from "../images/s2.png"

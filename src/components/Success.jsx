@@ -1,5 +1,4 @@
 import React from 'react'
-import Imgs from "../images/success.png"
 import Pattern from "../images/frame.png"
 
 const Success = ({ image, title, para1, para2, classs, bhead, bpara }) => {

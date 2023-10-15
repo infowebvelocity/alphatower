@@ -17,8 +17,8 @@ const Home = () => {
         <p>Revolutionize your stock market experience with us.</p>
 
         <div className="btn">
-          <a href="">Get a Quote</a>
-          <a href="">Learn More</a>
+          <a href="/">Get a Quote</a>
+          <a href="/">Learn More</a>
         </div>
 
       </section>
