@@ -1,5 +1,5 @@
 import React from 'react'
-import Metrics from './Metrics'
+// import Metrics from './Metrics'
 import Callback from './Callback'
 import Service from './Service'
 import Features from './Features'
@@ -17,8 +17,8 @@ const Home = () => {
         <p>Revolutionize your stock market experience with us.</p>
 
         <div className="btn">
-          <a href="">Get a Quote</a>
-          <a href="">Learn More</a>
+          <a href="/">Get a Quote</a>
+          <a href="/">Learn More</a>
         </div>
 
       </section>
