@@ -4,6 +4,10 @@ import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagramAlt } from "react-icons/b
 import { IoIosArrowUp } from "react-icons/io";
 
 const Footer = () => {
+
+  function handleClick() {
+    window.scroll(0, 0)
+  }
   return (
     <header className="footer">
 
@@ -53,9 +57,10 @@ const Footer = () => {
 
 
           <nav className="fnav">
-            <Link to="/">API Bridge</Link>
-            <Link to="/about">Algo Trading</Link>
-            <Link to="/services">MQL Development</Link>
+            <Link onClick={handleClick} to="/services">API Bridge</Link>
+            <Link onClick={handleClick} to="/services">Algo Trading</Link>
+            <Link onClick={handleClick} to="/services">MQL Development</Link>
+            <Link onClick={handleClick} to="/services">MQL Development</Link>
 
           </nav>
         </div>

@@ -13,6 +13,8 @@ function App() {
     <div className="App">
       <Header />
 
+      <div className="space"></div>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -23,7 +25,7 @@ function App() {
 
       <Footer />
 
-      
+
 
 
     </div>

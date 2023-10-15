@@ -9,6 +9,10 @@ import Imgs from "../images/success.png"
 
 const Home = () => {
 
+  function handleClick() {
+    window.scroll(0, 0)
+  }
+
   return (
 
     <>
@@ -18,8 +22,8 @@ const Home = () => {
         <p>Revolutionize your stock market experience with us.</p>
 
         <div className="btn">
-          <a href="/contact">Get a Quote</a>
-          <a href="/services">Learn More</a>
+          <a onClick={handleClick} href="/contact">Get a Quote</a>
+          <a onClick={handleClick}  href="/services">Learn More</a>
         </div>
 
       </section>

@@ -28,8 +28,17 @@
   height: 10vh;
   align-items: center;
   padding: 1rem 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 111;
 }
 
+.space {
+  padding-top: 10vh;
+}
 .header nav {
   display: flex;
   justify-content: center;

@@ -4,6 +4,10 @@ import pricingimg from "../images/pricing.png"
 // import Pcard from './Pcard'
 const Pricing = () => {
 
+  function handleClick() {
+    window.scroll(0, 0)
+  }
+
   // const data = [
   //   {
   //     title: 'Monthly',
@@ -32,8 +36,8 @@ const Pricing = () => {
         <p>Lorem ipsum dolor sit amet consectetur. Tortor vitae senectus nunc ut volutpat facilisis consequat nullam. Orci posuere in quis ut. Nunc id faucibus eu nisl integer netus nibh. Viverra nibh ipsum etiam sit in.</p>
 
         <div className="btn">
-          <a href="/contact">Get a Quote</a>
-          <a href="/services">Learn More</a>
+          <a onClick={handleClick} href="/contact">Get a Quote</a>
+          <a onClick={handleClick} href="/services">Learn More</a>
         </div>
 
         {/* <div className="pcardcon">
