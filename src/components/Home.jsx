@@ -1,5 +1,5 @@
 import React from 'react'
-import Metrics from './Metrics'
+// import Metrics from './Metrics'
 import Callback from './Callback'
 import Service from './Service'
 import Features from './Features'
