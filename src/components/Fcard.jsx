@@ -8,7 +8,7 @@ const Fcard = ({ num, title, para }) => {
             <span>{num}</span>
             <h3>{title}</h3>
             <p>{para}</p>
-            <Link to='/'>Learn More <BsArrowRight/> </Link>
+            <Link to='/services'>Learn More <BsArrowRight/> </Link>
 
         </div>
     )

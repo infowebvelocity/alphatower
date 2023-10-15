@@ -8,7 +8,7 @@ const Scard = ({ img, title, para }) => {
 
             <h4>{title}</h4>
             <p>{para}</p>
-            <Link to='/'>Learn More</Link>
+            <Link to='/services'>Learn More</Link>
 
         </div>
     )

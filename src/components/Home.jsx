@@ -8,6 +8,7 @@ import Imgs from "../images/success.png"
 
 
 const Home = () => {
+
   return (
 
     <>
@@ -17,8 +18,8 @@ const Home = () => {
         <p>Revolutionize your stock market experience with us.</p>
 
         <div className="btn">
-          <a href="/">Get a Quote</a>
-          <a href="/">Learn More</a>
+          <a href="/contact">Get a Quote</a>
+          <a href="/services">Learn More</a>
         </div>
 
       </section>
@@ -26,7 +27,7 @@ const Home = () => {
       <section className="sec2">
         <Service />
       </section>
-      
+
       <section className="sec3">
         <Features />
       </section>
@@ -36,14 +37,9 @@ const Home = () => {
       </section>
 
 
-
       {/* <section className="sec2">
         <Metrics />
       </section> */}
-
-
-
-
 
 
       <section className="sec5">

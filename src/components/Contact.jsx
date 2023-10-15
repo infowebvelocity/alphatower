@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Import Axios
+import axios from 'axios';
 import Map from '../images/map.png';
 import Success from './Success'
 import contactimg from "../images/contact.png"
