@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Pattern from "../images/Pattern.png"
 import axios from 'axios';
 import {  toast } from 'react-toastify';
 
@@ -99,9 +98,7 @@ const Callback = () => {
   return (
     <section className="metrics">
 
-      <img className='pat1' src={Pattern} alt="pattern" />
-      <img className='pat2' src={Pattern} alt="pattern" />
-
+    
       <h2>Request a Callback</h2>
       <p>Step into the future of trading with us. Enter your details and let our algorithms do the heavy lifting for you!</p>
 

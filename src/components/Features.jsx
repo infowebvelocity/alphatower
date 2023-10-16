@@ -1,6 +1,6 @@
 import React from 'react'
 import Fcard from "./Fcard"
-import Pattern from "../images/Pattern.png"
+
 
 const Features = () => {
 
@@ -35,9 +35,7 @@ const Features = () => {
     return (
         <section className="metrics features">
 
-            <img className='fpat fpat1' src={Pattern} alt="pattern" />
-            <img className='fpat fpat2' src={Pattern} alt="pattern" />
-
+          
             <div className="featcontent">
                 <h2>Why Choose Us ?</h2>
                 <p>Our cutting-edge technology transforms your strategy into action. <br /> <br />

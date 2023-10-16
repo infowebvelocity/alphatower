@@ -3,7 +3,7 @@ import axios from 'axios';
 import Success from './Success'
 import contactimg from "../images/contact.png"
 import { BiLogoInstagramAlt, BiLogoGmail, BiSolidPhone, BiSolidMap, BiSolidGrid, BiLogoLinkedinSquare } from "react-icons/bi";
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
@@ -82,7 +82,7 @@ const Contact = () => {
           type: 'error'
         });
       } else {
-       
+
         toast(error.message, {
           position: 'top-right',
           autoClose: 5000,
@@ -100,13 +100,13 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      <Success classs="success contactbg" bpara={'bpara'} bhead={'bhead'} image={contactimg} title="Our Services" para1="We offer a comprehensive suite of trading solutions. Our services are designed to empower your trading and fuel your success. Explore our offerings and find the perfect fit for your trading needs." />
+      <Success classs="success contactbg" bpara={'bpara'} bhead={'bhead'} image={contactimg} title="Contact Us" para1="Have questions or ready to explore the possibilities of automated trading with us? We're here to assist you. Contact us today for personalized guidance and solutions tailored to your trading needs." />
 
       <div className="concon">
         <div className="formm">
           <h3>Get in Touch</h3>
           <p>
-            Have questions or ready to explore the possibilities of automated trading with us? We're here to assist you. Contact us today for personalized guidance and solutions tailored to your trading needs
+            We would love to hear from you! Reach out to us with any questions, inquiries, or feedback you may have.
           </p>
           <form onSubmit={handleSubmit}>
             <input type="text" name="name" placeholder="Full Name" onChange={handleChange} value={formData.name} />

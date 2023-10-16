@@ -23,7 +23,7 @@ const Home = () => {
 
         <div className="btn">
           <a onClick={handleClick} href="/contact">Get a Quote</a>
-          <a onClick={handleClick}  href="/services">Learn More</a>
+          <a onClick={handleClick} href="/services">Learn More</a>
         </div>
 
       </section>
