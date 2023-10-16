@@ -1,6 +1,5 @@
 import React from 'react'
 import Stats from "./Stats"
-import Pattern from "../images/Pattern.png"
 
 const Metrics = () => {
 
@@ -31,9 +30,7 @@ const Metrics = () => {
     return (
         <section className="metrics">
 
-            <img className='pat1' src={Pattern} alt="pattern" />
-            <img className='pat2' src={Pattern} alt="pattern" />
-
+           
             <h2>Our Metrics Tell Our Story</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Elit massa morbi eget velit in mauris. Porta risus placerat nunc nullam felis. Est in vitae velit eu lectus elit risus ac magna a.</p>
 
