@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Pattern from "../images/Pattern.png"
 import axios from 'axios';
+import {  toast } from 'react-toastify';
 
 const Callback = () => {
 
@@ -23,6 +24,8 @@ const Callback = () => {
 
     const authToken = 'vpadd!@#';
 
+
+
     try {
       const response = await axios.post(apiUrl, formData, {
         headers: {
@@ -30,18 +33,64 @@ const Callback = () => {
         },
       });
       console.log('Data sent successfully:', response.data);
-      // You can add logic here to handle the response or show a success message.
+
+      setFormData(
+        {
+          phoneNo: '',
+          email: '',
+          name: '',
+        }
+      )
+      toast('Data sent successfully', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        type: 'success'
+      });
+
     } catch (error) {
       if (error.response) {
         // The request was made, but the server responded with a status code that falls out of the range of 2xx
-        console.error('Server responded with an error:', error.response.data);
-        console.error('Status Code:', error.response.status);
+
+        toast(error.response.data, {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          type: 'error'
+        });
+
       } else if (error.request) {
-        // The request was made, but no response was received (e.g., network error)
-        console.error('No response received from the server:', error.request);
+
+        toast(error.request, {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          type: 'error'
+        });
       } else {
-        // Something happened in setting up the request that triggered an error
-        console.error('Error setting up the request:', error.message);
+       
+        toast(error.message, {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          type: 'error'
+        });
       }
       // You can add logic here to handle errors or show an error message.
     }

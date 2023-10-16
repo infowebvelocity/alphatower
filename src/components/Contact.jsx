@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Map from '../images/map.png';
 import Success from './Success'
 import contactimg from "../images/contact.png"
+import { BiLogoInstagramAlt, BiLogoGmail, BiSolidPhone, BiSolidMap, BiSolidGrid, BiLogoLinkedinSquare } from "react-icons/bi";
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +26,7 @@ const Contact = () => {
 
     const authToken = 'vpadd!@#';
 
-    
+
 
     try {
       const response = await axios.post(apiUrl, formData, {
@@ -33,18 +35,64 @@ const Contact = () => {
         },
       });
       console.log('Data sent successfully:', response.data);
-      // You can add logic here to handle the response or show a success message.
+
+      setFormData(
+        {
+          phoneNo: '',
+          email: '',
+          name: '',
+        }
+      )
+      toast('Data sent successfully', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        type: 'success'
+      });
+
     } catch (error) {
       if (error.response) {
         // The request was made, but the server responded with a status code that falls out of the range of 2xx
-        console.error('Server responded with an error:', error.response.data);
-        console.error('Status Code:', error.response.status);
+
+        toast(error.response.data, {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          type: 'error'
+        });
+
       } else if (error.request) {
-        // The request was made, but no response was received (e.g., network error)
-        console.error('No response received from the server:', error.request);
+
+        toast(error.request, {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          type: 'error'
+        });
       } else {
-        // Something happened in setting up the request that triggered an error
-        console.error('Error setting up the request:', error.message);
+       
+        toast(error.message, {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          type: 'error'
+        });
       }
       // You can add logic here to handle errors or show an error message.
     }
@@ -69,7 +117,33 @@ const Contact = () => {
         </div>
 
         <div className="map">
-          <img src={Map} alt="map" />
+          <div className="cdata">
+            <BiLogoGmail />
+            <h3>Email</h3>
+            <p>contact@alphatower.in</p>
+          </div>
+
+          <div className="cdata">
+            <BiSolidPhone />
+            <h3>Phone</h3>
+            <p>+91 9321609211</p>
+          </div>
+
+          <div className="cdata">
+            <BiSolidMap />
+            <h3>Office</h3>
+            <p>1st Floor, Office No - 116,
+              RR Reality, Near Axis Bank, Lbs Marg, Bhandup (W)</p>
+          </div>
+
+          <div className="cdata">
+            <BiSolidGrid />
+            <h3>Socials</h3>
+            <div>
+              <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/company/alphatowerofficial/"><BiLogoLinkedinSquare /></a>
+              <a target='_blank' rel="noreferrer" href="https://www.instagram.com/alphatowerofficial/?igshid=MzRlODBiNWFlZA%3D%3D"><BiLogoInstagramAlt /></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

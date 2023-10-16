@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagramAlt } from "react-icons/bi";
+import { BiLogoLinkedinSquare, BiLogoInstagramAlt } from "react-icons/bi";
 import { IoIosArrowUp } from "react-icons/io";
 
 const Footer = () => {
@@ -81,9 +81,8 @@ const Footer = () => {
         </p>
 
         <div className="icons">
-          <BiLogoFacebook />
-          <BiLogoTwitter />
-          <BiLogoInstagramAlt />
+          <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/company/alphatowerofficial/"><BiLogoLinkedinSquare /></a>
+          <a target='_blank' rel="noreferrer" href="https://www.instagram.com/alphatowerofficial/?igshid=MzRlODBiNWFlZA%3D%3D"><BiLogoInstagramAlt /></a>
         </div>
 
       </div>

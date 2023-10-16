@@ -13,11 +13,17 @@ const Header = () => {
        window.scroll(0,0)
     }
 
+    function handlelogoClick() {
+       window.scroll(0,0)
+    }
+
+
+    
     return (
         <header className="header">
 
             <div className="logo">
-                <Link onClick={handleClick} to="/"><h1>ALPHATOWER</h1></Link>
+                <Link onClick={handlelogoClick} to="/"><h1>ALPHATOWER</h1></Link>
             </div>
 
             <nav className={open ? "nav open" : "nav closee"}>

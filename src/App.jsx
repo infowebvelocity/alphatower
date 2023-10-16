@@ -7,10 +7,12 @@ import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Pricing from './components/Pricing';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div className="App">
+     <ToastContainer />
       <Header />
 
       <div className="space"></div>
