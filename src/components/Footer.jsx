@@ -8,6 +8,8 @@ const Footer = () => {
   function handleClick() {
     window.scroll(0, 0)
   }
+
+
   return (
     <header className="footer">
 
@@ -18,17 +20,19 @@ const Footer = () => {
 
           <div>
             <h4>Email</h4>
-            <p>hello@logoipsum.com</p>
+            <a className='btntel' href="mailto:contact@alphatower.in"><p>contact@alphatower.in</p></a>
           </div>
 
           <div>
             <h4>Address</h4>
-            <p>26 A, Chandra Nagar, First Floor Indore M.P.- 452011</p>
+            <p>1st Floor, Office No - 116, <br />
+              RR Reality, Near Axis Bank,
+              Lbs Marg, Bhandup (W)</p>
           </div>
 
           <div>
             <h4>Phone</h4>
-            <p>+91 9855759850</p>
+            <a className='btntel' href="tel:+9193216 09211"><p>+91 93216 09211</p></a>
           </div>
 
         </div>
@@ -38,14 +42,11 @@ const Footer = () => {
 
 
           <nav className="fnav">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/pricing">Pricing</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/">Privacy Policy</Link>
-            <Link to="/">FAQ</Link>
-
+            <Link onClick={handleClick} to="/">Home</Link>
+            <Link onClick={handleClick} to="/about">About Us</Link>
+            <Link onClick={handleClick} to="/services">Services</Link>
+            <Link onClick={handleClick} to="/pricing">Pricing</Link>
+            <Link onClick={handleClick} to="/contact">Contact</Link>
 
 
           </nav>
@@ -57,10 +58,10 @@ const Footer = () => {
 
 
           <nav className="fnav">
-            <Link onClick={handleClick} to="/services">API Bridge</Link>
-            <Link onClick={handleClick} to="/services">Algo Trading</Link>
-            <Link onClick={handleClick} to="/services">MQL Development</Link>
-            <Link onClick={handleClick} to="/services">MQL Development</Link>
+            <Link onClick={handleClick} to="/services">Buy/Sell Bots</Link>
+            <Link onClick={handleClick} to="/services">Buy/Sell Alerts</Link>
+            <Link onClick={handleClick} to="/services">Backtesting</Link>
+            <Link onClick={handleClick} to="/services">Strategy Development</Link>
 
           </nav>
         </div>
@@ -68,7 +69,7 @@ const Footer = () => {
 
 
         <div className="fbtn">
-          <span><IoIosArrowUp /></span>
+          <span onClick={handleClick} ><IoIosArrowUp /></span>
         </div>
 
       </div>

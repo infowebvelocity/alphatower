@@ -16,12 +16,15 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const apiUrl = 'https://492nso75d3.execute-api.us-east-1.amazonaws.com/prod/storeContactDetails';
 
     const authToken = 'vpadd!@#';
+
+    
 
     try {
       const response = await axios.post(apiUrl, formData, {
