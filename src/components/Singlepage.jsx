@@ -26,7 +26,7 @@ const Singlepage = () => {
                 console.log(error);
 
             });
-    }, []);
+    }, [ ]);
 
     return (
         <div className="singlepage">
@@ -36,7 +36,7 @@ const Singlepage = () => {
                 <h2>{data.name}</h2>
                 <p>{data.summary}</p>
                 <p>TechStack - <span>{data.techstack}</span></p>
-                <a target='_blank' href={data.link}>Link</a>
+                <a rel="noreferrer" target='_blank' href={data.link}>Link</a>
             </div>
 
             <div className="body">
