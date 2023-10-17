@@ -841,10 +841,24 @@ html {
 .pricingbg {
   background: linear-gradient(
       to right,
-      rgba(38, 55, 80, 0.8),
-      rgba(38, 55, 80, 0.8)
+      rgba(38, 55, 80, 0.85),
+      rgba(38, 55, 80, 0.85)
     ),
     url(./images/bg1.png);
+  background-position: "center";
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: row-reverse;
+  padding: 1% 8%;
+}
+
+.projectbg {
+  background: linear-gradient(
+      to right,
+      rgba(38, 55, 80, 0.85),
+      rgba(38, 55, 80, 0.85)
+    ),
+    url(./images/bg3.png);
   background-position: "center";
   background-repeat: no-repeat;
   background-size: cover;
@@ -855,8 +869,8 @@ html {
 .contactbg {
   background: linear-gradient(
       to right,
-      rgba(38, 55, 80, 0.8),
-      rgba(38, 55, 80, 0.8)
+      rgba(38, 55, 80, 0.85),
+      rgba(38, 55, 80, 0.85)
     ),
     url(./images/bg2.png);
   background-position: "center";
@@ -879,6 +893,107 @@ html {
   font-size: 36px;
   color: #ffffff;
 }
+
+.projectcard {
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.projectcard:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.projectcard .content {
+  padding: 4% 4% 8% 4%;
+}
+
+.projectcard .content h2 {
+  font-size: 1.5rem;
+  color: var(--main);
+  font-style: var(--poppins);
+  font-weight: 600;
+}
+.projectcard img {
+  width: 100%;
+  height: 230px;
+  border-radius: 5px 5px 0 0;
+}
+
+.projectcard .imgsec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectcon a {
+  text-decoration: none;
+}
+
+.projectcard p {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 20px;
+  height: 100px;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box; /* add this property */
+  -webkit-line-clamp: 4; /* add this property */
+  -webkit-box-orient: vertical; /* add this property */
+  width: 100%;
+  margin-top: 10px;
+}
+.projectcon {
+  padding: 4% 8%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.125rem;
+  flex-wrap: wrap;
+}
+
+.whaticon {
+  align-items: center;
+  background-color: #075e54;
+  border-radius: 50%;
+  bottom: 35px;
+  cursor: pointer;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  position: fixed;
+  right: 25px;
+  width: 70px;
+  z-index: 111;
+}
+
+.whaticon svg {
+  -webkit-animation: animate-pulse 3s linear infinite;
+  animation: animate-pulse 3s linear infinite;
+  border-radius: 50%;
+  color: #ffffff !important;
+  color: var(--clr4);
+  font-size: 30px;
+  margin-top: 5px;
+}
+@keyframes animate-pulse {
+  0% {
+    box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0.7), 0 0 0 0 hsla(0, 0%, 100%, 0.7);
+  }
+
+  40% {
+    box-shadow: 0 0 0 35px hsla(0, 0%, 100%, 0), 0 0 0 0 hsla(0, 0%, 100%, 0.7);
+  }
+  80% {
+    box-shadow: 0 0 0 35px hsla(0, 0%, 100%, 0), 0 0 0 35px hsla(0, 0%, 100%, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0), 0 0 0 35px hsla(0, 0%, 100%, 0);
+  }
+}
+
 @media screen and (max-width: 991px) {
   .contact .concon > .formm {
     width: 100% !important;
@@ -1267,6 +1382,19 @@ html {
 }
 
 @media screen and (min-width: 600px) and (max-width: 991px) {
+
+  .whaticon {
+    bottom: 25px;
+    height: 60px;
+    right: 15px;
+    width: 60px;
+}
+  .projectcard {
+    width: 350px;
+  }
+  .projectcard img {
+    height: 250px;
+  }
   .header .nav a {
     color: var(--halfwhite);
     font-size: 1.5rem;
@@ -1336,15 +1464,19 @@ html {
 
 @media screen and (min-width: 991px) and (max-width: 1250px) {
 
-  
-.map {
-  padding: 50px 0;
+  .whaticon {
+    bottom: 25px;
+    height: 60px;
+    right: 15px;
+    width: 60px;
 }
+  .map {
+    padding: 50px 0;
+  }
 
-.map > div {
-  width: 220px;
-
-}
+  .map > div {
+    width: 220px;
+  }
   .scon .scard {
     width: 40%;
   }
@@ -1424,6 +1556,13 @@ html {
     padding: 4% 6%;
   }
 
+  .projectcard {
+    width: 320px;
+  }
+  .projectcard img {
+    height: 200px;
+  }
+
   .map > div h3 {
     font-size: 20px;
   }
@@ -1434,5 +1573,158 @@ html {
   }
   .map {
     padding: 30px;
+  }
+}
+
+.singlepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.singlepage img {
+  width: 800px;
+  align-self: center;
+}
+.singlepage .head {
+  background-color: rgba(38, 55, 80, 0.15);
+  padding: 6% 8%;
+}
+
+.singlepage .head span {
+  font-weight: 500;
+}
+
+.singlepage .body {
+  background-color: #ffffff;
+  padding: 2% 8% 8% 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+.singlepage h2 {
+  font-size: 52px;
+  font-weight: 500;
+  color: #263750;
+  margin-bottom: 15px;
+}
+.singlepage p {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.singlepage .body > p {
+  margin-bottom: 15px;
+}
+
+.singlepage .head a {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: #263750;
+  width: max-content;
+  padding: 10px 50px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 990px) {
+  .singlepage .head {
+    padding: 6% 4%;
+  }
+
+  .singlepage .body {
+    padding: 4%;
+  }
+
+  .singlepage .body img {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .whaticon {
+    bottom: 15px;
+    height: 50px;
+    right: 15px;
+    width: 50px;
+}
+  .singlepage .head {
+    padding: 6% 4%;
+  }
+
+  .singlepage .body {
+    padding: 8% 4%;
+  }
+
+  .singlepage .body img {
+    width: 390px;
+  }
+
+  .singlepage .body > p {
+    margin-bottom: 10px;
+  }
+
+  .singlepage p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .singlepage .head a {
+    font-size: 15px;
+    padding: 10px 35px;
+  }
+
+  .singlepage h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    word-spacing: -5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projectcard {
+    width: 280px;
+  }
+  .projectcard img {
+    height: 180px;
+  }
+  .singlepage .head {
+    padding: 6%;
+  }
+
+  .singlepage .body {
+    padding: 8% 6%;
+  }
+
+  .singlepage .body img {
+    width: 280px;
+  }
+
+  .singlepage .body > p {
+    margin-bottom: 10px;
+  }
+
+  .singlepage p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .singlepage .head a {
+    font-size: 14px;
+    padding: 10px 35px;
+  }
+
+  .singlepage h2 {
+    font-size: 28px;
   }
 }

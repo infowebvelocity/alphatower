@@ -6,6 +6,7 @@ import { BiLogoInstagramAlt, BiLogoGmail, BiSolidPhone, BiSolidMap, BiSolidGrid,
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     phoneNo: '',
@@ -116,6 +117,7 @@ const Contact = () => {
           </form>
         </div>
 
+
         <div className="map">
           <div className="cdata">
             <BiLogoGmail />
@@ -149,5 +151,6 @@ const Contact = () => {
     </section>
   );
 };
+
 
 export default Contact;

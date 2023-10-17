@@ -33,6 +33,7 @@ const Header = () => {
                 <Link onClick={handleClick} to="/">Home</Link>
                 <Link onClick={handleClick} to="/about">About Us</Link>
                 <Link onClick={handleClick} to="/services">Services</Link>
+                <Link onClick={handleClick} to="/project">Projects</Link>
                 <Link onClick={handleClick} to="/pricing">Pricing</Link>
                 <Link onClick={handleClick} to="/contact">Contact</Link>
             </nav>
