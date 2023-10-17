@@ -26,7 +26,7 @@ const Singlepage = () => {
                 console.log(error);
 
             });
-    }, [ ]);
+    }, [url, id]);
 
     return (
         <div className="singlepage">

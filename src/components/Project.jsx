@@ -28,7 +28,7 @@ const Project = () => {
                 console.log(error);
 
             });
-    }, []);
+    }, [url]);
 
     return (
         <section className="pricing">
